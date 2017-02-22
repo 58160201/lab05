@@ -10,12 +10,12 @@
              xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
          }
          xmlhttp.onreadystatechange= function(){
-             alert(xmlhttp.readyState + " : " + xmlhttp.status);
-             if(xmlhttp.readyState==4 && xmlhttp.status==200){
+           alert(xmlhttp.readyState + " : " + xmlhttp.status);
+            if(xmlhttp.readyState==4 && xmlhttp.status==200){
                  document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
-             }
+            }
          }
-         xmlhttp.open("GET","hello.txt",true);
+         xmlhttp.open("GET","kamkom.php",true);
          xmlhttp.send();
         }
         </script>
